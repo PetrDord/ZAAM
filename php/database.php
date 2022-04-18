@@ -45,7 +45,7 @@ public function connect(): object
  * @param  mixed $tablename
  * @return Json file
  */
-public function toJson(string $filename, string $tablename)
+public function toJson(string $tablename)
 {
     $h = mysqli_query($this->data, 'SELECT * FROM '. $tablename);
     $h = mysqli_fetch_all($h, MYSQLI_ASSOC);
